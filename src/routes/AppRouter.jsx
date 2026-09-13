@@ -138,7 +138,7 @@ import Home from "../Pages/Home";
 const router = createBrowserRouter(
   [
     {
-      path: "/saumya_gupta-portfolio",
+      path: "/saumya_gupta_portfolio",
       element: <Layout />,
       children: [
         {
