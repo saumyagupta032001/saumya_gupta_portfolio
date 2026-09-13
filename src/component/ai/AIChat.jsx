@@ -76,7 +76,7 @@ const AIChat = ({
                 <br />
                 Ask me anything about{" "}
                 <span className="text-white">
-                  Vikas Gupta
+                  Saumya Gupta
                 </span>
                 .
               </p>

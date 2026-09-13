@@ -14,7 +14,7 @@ const actions = [
     id: 1,
     icon: Code2,
     title: "Tech Stack",
-    subtitle: "React • Spring Boot • MySQL",
+    subtitle: "React • Node.js • MySQL",
     prompt: "tech",
     color: "from-cyan-500 to-sky-500",
   },

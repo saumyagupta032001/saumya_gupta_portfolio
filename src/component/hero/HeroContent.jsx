@@ -315,6 +315,142 @@
 // export default HeroContent;
 
 
+
+
+
+
+
+
+
+
+
+// import { portfolio } from "@/data/portfolioData";
+// import AnimatedText from "./AnimatedText";
+// import HeroButtons from "./HeroButtons";
+// import HeroStats from "./HeroStats";
+// import SocialLinks from "./SocialLinks";
+
+// const HeroContent = () => {
+//   const nameParts = portfolio.name.split(" ");
+
+//   return (
+//     <div className="flex w-full flex-col justify-center space-y-4 sm:space-y-5">
+      
+//       {/* 1. Status Pill */}
+//       <div>
+//         <span
+//           className="
+//             inline-flex
+//             items-center
+//             gap-2
+//             rounded-full
+//             border
+//             border-cyan-500/25
+//             bg-cyan-500/5
+//             px-3
+//             py-1
+//             sm:px-3.5
+//             sm:py-1.5
+//             text-[11px]
+//             sm:text-xs
+//             font-medium
+//             text-cyan-300
+//             backdrop-blur-md
+//           "
+//         >
+//           <span className="h-2 w-2 shrink-0 rounded-full bg-cyan-400 animate-pulse" />
+//           <span>Available for MERN Full Stack Roles</span>
+//         </span>
+//       </div>
+
+//       {/* 2. Headings & Role */}
+//       <div className="space-y-1 sm:space-y-1.5">
+//         <h1
+//           className="
+//             text-3xl
+//             xs:text-4xl
+//             sm:text-5xl
+//             lg:text-5xl
+//             xl:text-6xl
+//             font-extrabold
+//             tracking-tight
+//             text-white
+//             leading-tight
+//           "
+//         >
+//           {nameParts[0]}{" "}
+//           {nameParts[1] && (
+//             // <span className="bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-400 bg-clip-text text-transparent">
+//             //   {nameParts[1]}
+//             // </span>
+//   <span className="bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-500 bg-clip-text text-transparent">
+//   {nameParts[1]}
+// </span>
+//           )}
+//         </h1>
+
+//         <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-medium text-slate-200">
+//           I am a <AnimatedText />
+//         </div>
+//       </div>
+
+//       {/* 3. Description */}
+//       {/* <p
+//         className="
+//           text-xs
+//           xs:text-sm
+//           sm:text-base
+//           leading-relaxed
+//           text-slate-400
+//           max-w-xl
+//           text-justify
+//         "
+//       >
+//         Full Stack Developer with{" "}
+//         <strong className="font-semibold text-slate-200">
+//           2+ years of experience
+//         </strong>{" "}
+//         building scalable web applications using Java, Spring Boot, React, and
+//         cloud ecosystems. Focused on performance, clean architecture, and modern UX.
+//       </p> */}
+
+
+//       <p
+//   className="
+//     text-xs
+//     xs:text-sm
+//     sm:text-base
+//     leading-relaxed
+//     text-slate-400
+//     max-w-xl
+//     text-justify
+//   "
+// >
+//   Full Stack Developer with{" "}
+//   <strong className="font-semibold text-slate-200">
+//     2+ years of experience
+//   </strong>{" "}
+//   building modern and scalable web applications using React.js, Next.js,
+//   Node.js, JavaScript, REST APIs, MongoDB, and MySQL. Focused on performance,
+//   clean architecture, responsive interfaces, and seamless user experiences.
+// </p>
+
+//       {/* 4. Action Buttons */}
+//       <HeroButtons />
+
+//       {/* 5. Social Bar */}
+//       <SocialLinks />
+
+//       {/* 6. Metrics Grid */}
+//       <HeroStats />
+//     </div>
+//   );
+// };
+
+// export default HeroContent;
+
+
+
 import { portfolio } from "@/data/portfolioData";
 import AnimatedText from "./AnimatedText";
 import HeroButtons from "./HeroButtons";
@@ -336,8 +472,8 @@ const HeroContent = () => {
             gap-2
             rounded-full
             border
-            border-cyan-500/25
-            bg-cyan-500/5
+            border-rose-500/25
+            bg-rose-500/10
             px-3
             py-1
             sm:px-3.5
@@ -345,12 +481,12 @@ const HeroContent = () => {
             text-[11px]
             sm:text-xs
             font-medium
-            text-cyan-300
+            text-rose-300
             backdrop-blur-md
           "
         >
-          <span className="h-2 w-2 shrink-0 rounded-full bg-cyan-400 animate-pulse" />
-          <span>Available for Full Stack Roles</span>
+          <span className="h-2 w-2 shrink-0 rounded-full bg-rose-400 animate-pulse" />
+          <span>Available for MERN Full Stack Roles</span>
         </span>
       </div>
 
@@ -371,7 +507,7 @@ const HeroContent = () => {
         >
           {nameParts[0]}{" "}
           {nameParts[1] && (
-            <span className="bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-rose-400 via-pink-500 to-fuchsia-500 bg-clip-text text-transparent">
               {nameParts[1]}
             </span>
           )}
@@ -398,8 +534,9 @@ const HeroContent = () => {
         <strong className="font-semibold text-slate-200">
           2+ years of experience
         </strong>{" "}
-        building scalable web applications using Java, Spring Boot, React, and
-        cloud ecosystems. Focused on performance, clean architecture, and modern UX.
+        building modern and scalable web applications using React.js, Next.js,
+        Node.js, JavaScript, REST APIs, MongoDB, and MySQL. Focused on performance,
+        clean architecture, responsive interfaces, and seamless user experiences.
       </p>
 
       {/* 4. Action Buttons */}

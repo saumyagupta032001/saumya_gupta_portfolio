@@ -1,3 +1,194 @@
+// export const portfolioKnowledge = {
+//   tech: {
+//     title: "🚀 Tech Stack",
+
+//     text: `
+// Frontend
+// • React.js
+// • Angular
+// • JavaScript
+// • Tailwind CSS
+
+// Backend
+// • Java
+// • Spring Boot
+// • Spring Security
+// • Hibernate
+// • JPA
+// • REST APIs
+
+// Database
+// • MySQL
+// • MongoDB
+
+// Tools
+// • Git
+// • GitHub
+// • Docker
+// • Postman
+// • IntelliJ IDEA
+// • VS Code
+// `,
+
+//     action: "projects",
+
+//     suggestions: [
+//       "Frontend Skills",
+//       "Backend Skills",
+//       "Database",
+//       "Projects",
+//     ],
+//   },
+
+//   projects: {
+//     title: "🪐 Featured Projects",
+
+//     text: `
+// • Quick Commerce Platform
+// • Referral Management System
+// • Wallet System
+// • 3D Developer Portfolio
+// • HRMS
+// • Vendor Management System
+// `,
+
+//     action: "projects",
+
+//     suggestions: [
+//       "Quick Commerce",
+//       "Referral System",
+//       "Portfolio",
+//       "GitHub",
+//     ],
+//   },
+
+//   experience: {
+//     title: "💼 Experience",
+
+//     text: `
+// • 2+ Years Professional Experience
+
+// • Full Stack Developer
+
+// • Java
+
+// • Spring Boot
+
+// • React
+
+// • Angular
+
+// • Enterprise Web Applications
+
+// • REST APIs
+
+// • MySQL & MongoDB
+// `,
+
+//     action: "contact",
+
+//     suggestions: [
+//       "Current Company",
+//       "Responsibilities",
+//       "Projects",
+//       "Achievements",
+//     ],
+//   },
+
+//   resume: {
+//     title: "📄 Resume",
+
+//     text: `
+// My latest resume is available for download.
+
+// It includes:
+
+// • Professional Summary
+
+// • Skills
+
+// • Experience
+
+// • Projects
+
+// • Education
+
+// • Certifications
+// `,
+
+//     action: "resume",
+
+//     suggestions: [
+//       "Download Resume",
+//       "Projects",
+//       "Contact",
+//     ],
+//   },
+
+//   hire: {
+//     title: "⭐ Why Hire Me?",
+
+//     text: `
+// ✔ 2+ Years Full Stack Development
+
+// ✔ Java & Spring Boot Expert
+
+// ✔ React & Angular Developer
+
+// ✔ REST API Development
+
+// ✔ Database Design
+
+// ✔ Enterprise Application Experience
+
+// ✔ Clean Architecture
+
+// ✔ Problem Solver
+
+// ✔ Fast Learner
+
+// ✔ Production Ready Code
+// `,
+
+//     action: "contact",
+
+//     suggestions: [
+//       "Contact",
+//       "Experience",
+//       "Projects",
+//       "Resume",
+//     ],
+//   },
+
+//   contact: {
+//     title: "📞 Contact",
+
+//     text: `
+// Let's build something amazing together.
+
+// 📧 Email
+// vikasgupta0423@gmail.com
+
+// 📱 Phone
+// +91 7309373587
+
+// 📍 Location
+// New Delhi, India
+// `,
+
+//     action: "contact",
+
+//     suggestions: [
+//       "Download Resume",
+//       "LinkedIn",
+//       "GitHub",
+//     ],
+//   },
+// };
+
+
+
+
 export const portfolioKnowledge = {
   tech: {
     title: "🚀 Tech Stack",
@@ -5,28 +196,24 @@ export const portfolioKnowledge = {
     text: `
 Frontend
 • React.js
-• Angular
+• Next.js
 • JavaScript
 • Tailwind CSS
 
 Backend
-• Java
-• Spring Boot
-• Spring Security
-• Hibernate
-• JPA
+• Node.js
+• Express.js
 • REST APIs
 
 Database
-• MySQL
 • MongoDB
+• MySQL
 
 Tools
 • Git
 • GitHub
 • Docker
 • Postman
-• IntelliJ IDEA
 • VS Code
 `,
 
@@ -44,19 +231,18 @@ Tools
     title: "🪐 Featured Projects",
 
     text: `
-• Quick Commerce Platform
-• Referral Management System
-• Wallet System
+• QuickCart – Quick Commerce Platform
+• QuickCart Backend & Admin API
 • 3D Developer Portfolio
-• HRMS
-• Vendor Management System
+• Real Estate Website
+• Business & Finance Websites
 `,
 
     action: "projects",
 
     suggestions: [
-      "Quick Commerce",
-      "Referral System",
+      "QuickCart",
+      "Backend Project",
       "Portfolio",
       "GitHub",
     ],
@@ -68,21 +254,21 @@ Tools
     text: `
 • 2+ Years Professional Experience
 
-• Full Stack Developer
+• Full Stack Web Development
 
-• Java
+• React.js & Next.js
 
-• Spring Boot
+• Node.js
 
-• React
+• JavaScript
 
-• Angular
+• REST API Integration
 
-• Enterprise Web Applications
+• MongoDB & MySQL
 
-• REST APIs
+• Responsive Web Applications
 
-• MySQL & MongoDB
+• UI Development & API Integration
 `,
 
     action: "contact",
@@ -91,7 +277,7 @@ Tools
       "Current Company",
       "Responsibilities",
       "Projects",
-      "Achievements",
+      "Resume",
     ],
   },
 
@@ -104,15 +290,10 @@ My latest resume is available for download.
 It includes:
 
 • Professional Summary
-
-• Skills
-
-• Experience
-
+• Technical Skills
+• Work Experience
 • Projects
-
 • Education
-
 • Certifications
 `,
 
@@ -129,25 +310,25 @@ It includes:
     title: "⭐ Why Hire Me?",
 
     text: `
-✔ 2+ Years Full Stack Development
+✔ 2+ Years Web Development Experience
 
-✔ Java & Spring Boot Expert
+✔ Full Stack Development
 
-✔ React & Angular Developer
+✔ React.js & Next.js
 
-✔ REST API Development
+✔ Node.js Backend Development
 
-✔ Database Design
+✔ REST API Integration
 
-✔ Enterprise Application Experience
+✔ MongoDB & MySQL
 
-✔ Clean Architecture
+✔ Responsive & Modern UI Development
 
-✔ Problem Solver
+✔ Clean and Maintainable Code
+
+✔ Problem Solving
 
 ✔ Fast Learner
-
-✔ Production Ready Code
 `,
 
     action: "contact",
@@ -167,13 +348,10 @@ It includes:
 Let's build something amazing together.
 
 📧 Email
-vikasgupta0423@gmail.com
-
-📱 Phone
-+91 7309373587
+saumyagupta032001@gmail.com
 
 📍 Location
-New Delhi, India
+Prayagraj, Uttar Pradesh, India
 `,
 
     action: "contact",
@@ -184,4 +362,29 @@ New Delhi, India
       "GitHub",
     ],
   },
+
+  achievements: {
+  title: "🏆 Achievements & Activities",
+
+  text: `
+• National Service Scheme (NSS) Volunteer
+
+• Volunteer Management & Coordination — UGI-NSS, AU
+
+• Supported volunteer coordination and management activities
+
+• Contributed to team-based community and organizational activities
+`,
+
+  action: "contact",
+
+  suggestions: [
+    "Experience",
+    "Projects",
+    "Resume",
+    "Contact",
+  ],
+},
 };
+
+

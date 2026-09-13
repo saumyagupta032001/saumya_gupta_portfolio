@@ -96,6 +96,31 @@ transform:translateY(-18px);
 
 @import "tailwindcss";
 
+
+
+
+@theme {
+  --color-primary-light: #fb7185;   /* rose-400 */
+  --color-primary-base: #f43f5e;    /* rose-500 */
+  --color-secondary-base: #ec4899;  /* pink-500 */
+  --color-accent-base: #d946ef;     /* fuchsia-500 */
+}
+
+/* Gradient Text Utility */
+.text-gradient-primary {
+  display: inline-block;
+  background: linear-gradient(
+    to right,
+    var(--color-rose-400, #fb7185),
+    var(--color-pink-400, #ec4899),
+    var(--color-fuchsia-500, #d946ef)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 @theme {
   /* Brand Theme Colors */
   --color-primary-bg: #070B1F;
@@ -155,11 +180,21 @@ body {
   background: #070B1F;
 }
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: #00E5FF;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #38bdf8;
+} */
+
+
+::-webkit-scrollbar-thumb {
+  background: #fb7185;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ef6b7f;
 }

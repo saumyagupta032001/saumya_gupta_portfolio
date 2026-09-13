@@ -205,13 +205,64 @@
 
 
 
+// import { Download } from "lucide-react";
+
+// const ResumeButton = () => {
+//   return (
+//     <a
+//       href={`${import.meta.env.BASE_URL}assets/vikas-gupta-resume.pdf`}
+//       download="Vikas-Gupta-Resume.pdf"
+//       className="
+//         group
+//         relative
+//         hidden
+//         overflow-hidden
+//         rounded-full
+//         border
+//         border-cyan-400/30
+//         bg-cyan-500/10
+//         px-6
+//         py-2.5
+//         backdrop-blur-xl
+//         lg:inline-flex
+//         items-center
+//         justify-center
+//         transition-all
+//         duration-300
+//         hover:border-cyan-400
+//         hover:bg-cyan-500/20
+//         hover:shadow-[0_0_25px_rgba(34,211,238,0.3)]
+//         hover:-translate-y-0.5
+//         active:translate-y-0
+//       "
+//     >
+//       <span className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-sky-500/10 to-purple-500/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+//       <span className="relative h-6 overflow-hidden text-sm font-semibold tracking-wide">
+//         <span className="flex items-center gap-2 text-slate-100 transition-transform duration-500 ease-out group-hover:-translate-y-full">
+//           <Download size={16} className="text-cyan-400" />
+//           Resume
+//         </span>
+
+//         <span className="absolute inset-0 flex items-center justify-center gap-2 translate-y-full text-cyan-300 transition-transform duration-500 ease-out group-hover:translate-y-0">
+//           <Download size={16} className="text-cyan-300" />
+//           Download
+//         </span>
+//       </span>
+//     </a>
+//   );
+// };
+
+// export default ResumeButton;
+
+
 import { Download } from "lucide-react";
 
 const ResumeButton = () => {
   return (
     <a
-      href={`${import.meta.env.BASE_URL}assets/vikas-gupta-resume.pdf`}
-      download="Vikas-Gupta-Resume.pdf"
+      href={`${import.meta.env.BASE_URL}assets/saumya_gupta-resume_2026.pdf`}
+      download="Saumya-Gupta-Resume.pdf"
       className="
         group
         relative
@@ -219,8 +270,8 @@ const ResumeButton = () => {
         overflow-hidden
         rounded-full
         border
-        border-cyan-400/30
-        bg-cyan-500/10
+        border-rose-400/30
+        bg-rose-500/10
         px-6
         py-2.5
         backdrop-blur-xl
@@ -229,23 +280,23 @@ const ResumeButton = () => {
         justify-center
         transition-all
         duration-300
-        hover:border-cyan-400
-        hover:bg-cyan-500/20
-        hover:shadow-[0_0_25px_rgba(34,211,238,0.3)]
+        hover:border-rose-400
+        hover:bg-rose-500/20
+        hover:shadow-[0_0_25px_rgba(251,113,133,0.3)]
         hover:-translate-y-0.5
         active:translate-y-0
       "
     >
-      <span className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-sky-500/10 to-purple-500/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <span className="absolute inset-0 bg-gradient-to-r from-rose-500/10 via-pink-500/10 to-fuchsia-500/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
       <span className="relative h-6 overflow-hidden text-sm font-semibold tracking-wide">
         <span className="flex items-center gap-2 text-slate-100 transition-transform duration-500 ease-out group-hover:-translate-y-full">
-          <Download size={16} className="text-cyan-400" />
+          <Download size={16} className="text-rose-400" />
           Resume
         </span>
 
-        <span className="absolute inset-0 flex items-center justify-center gap-2 translate-y-full text-cyan-300 transition-transform duration-500 ease-out group-hover:translate-y-0">
-          <Download size={16} className="text-cyan-300" />
+        <span className="absolute inset-0 flex items-center justify-center gap-2 translate-y-full text-rose-300 transition-transform duration-500 ease-out group-hover:translate-y-0">
+          <Download size={16} className="text-rose-300" />
           Download
         </span>
       </span>

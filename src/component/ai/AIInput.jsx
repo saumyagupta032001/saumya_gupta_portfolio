@@ -30,7 +30,7 @@ const AIInput = ({ onSend }) => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Ask me anything about Vikas..."
+          placeholder="Ask me anything about Saumya Gupta..."
           className="flex-1 bg-transparent text-white placeholder:text-slate-500 outline-none"
         />
 

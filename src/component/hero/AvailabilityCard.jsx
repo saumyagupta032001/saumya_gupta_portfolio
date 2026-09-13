@@ -130,6 +130,61 @@
 
 
 
+// import { motion } from "framer-motion";
+
+// const AvailabilityCard = () => {
+//   return (
+//     <motion.div
+//       initial={{ opacity: 0, y: 15 }}
+//       animate={{ opacity: 1, y: 0 }}
+//       transition={{ duration: 0.7, delay: 0.3 }}
+//       className="
+//         absolute
+//         bottom-2 
+//         -left-2
+//         sm:bottom-4
+//         sm:-left-6
+//         md:bottom-6
+//         md:-left-10
+//         z-40
+//         bg-[#0b1329]/90
+//         backdrop-blur-xl
+//         rounded-2xl
+//         border
+//         border-cyan-500/30
+//         px-3.5
+//         py-2
+//         sm:px-4.5
+//         sm:py-3
+//         shadow-[0_10px_30px_rgba(0,0,0,0.5)]
+//         pointer-events-auto
+//         whitespace-nowrap
+//       "
+//     >
+//       <div className="flex items-center gap-2.5 sm:gap-3">
+//         {/* Pulse Dot */}
+//         <span className="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3">
+//           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+//           <span className="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3 sm:w-3 bg-emerald-500" />
+//         </span>
+
+//         <div>
+//           <h4 className="text-xs sm:text-sm font-semibold text-white tracking-wide leading-tight">
+//             Available for Work
+//           </h4>
+//           <p className="text-gray-400 text-[10px] sm:text-xs leading-tight">
+//             Open to Full Stack Roles
+//           </p>
+//         </div>
+//       </div>
+//     </motion.div>
+//   );
+// };
+
+// export default AvailabilityCard;
+
+
+
 import { motion } from "framer-motion";
 
 const AvailabilityCard = () => {
@@ -147,16 +202,16 @@ const AvailabilityCard = () => {
         md:bottom-6
         md:-left-10
         z-40
-        bg-[#0b1329]/90
+        bg-zinc-950/90
         backdrop-blur-xl
         rounded-2xl
         border
-        border-cyan-500/30
+        border-rose-500/30
         px-3.5
         py-2
         sm:px-4.5
         sm:py-3
-        shadow-[0_10px_30px_rgba(0,0,0,0.5)]
+        shadow-[0_10px_30px_rgba(0,0,0,0.7)]
         pointer-events-auto
         whitespace-nowrap
       "
@@ -172,7 +227,7 @@ const AvailabilityCard = () => {
           <h4 className="text-xs sm:text-sm font-semibold text-white tracking-wide leading-tight">
             Available for Work
           </h4>
-          <p className="text-gray-400 text-[10px] sm:text-xs leading-tight">
+          <p className="text-zinc-400 text-[10px] sm:text-xs leading-tight">
             Open to Full Stack Roles
           </p>
         </div>

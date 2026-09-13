@@ -108,7 +108,7 @@ const CenterAvatar = () => {
         anchorX="center"
         anchorY="middle"
       >
-        Vikas
+        Saumya Gupta
       </Text>
 
       <Text

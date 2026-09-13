@@ -1,3 +1,6 @@
+
+
+
 // export const projects = [
 //   {
 //     id: 1,
@@ -14,7 +17,8 @@
 //     color: "#22d3ee",
 //     secondaryColor: "#0ea5e9",
 
-//     image: "/projects/quick-commerce.png",
+//     // image: "/projects/projectimg1.png",
+//      image: `${import.meta.env.BASE_URL}projects/projectimg1.png`,
 
 //     github: "#",
 //     demo: "#",
@@ -73,7 +77,9 @@
 //     color: "#8b5cf6",
 //     secondaryColor: "#7c3aed",
 
-//     image: "/projects/referral.png",
+//     // image: "/projects/projectimg2.png",
+
+//      image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
 
 //     github: "#",
 //     demo: "#",
@@ -129,7 +135,8 @@
 //     color: "#10b981",
 //     secondaryColor: "#059669",
 
-//     image: "/projects/portfolio.png",
+//     // image: "/projects/projectimg2.png",
+//      image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
 
 //     github: "#",
 //     demo: "#",
@@ -188,7 +195,8 @@
 //     color: "#f59e0b",
 //     secondaryColor: "#d97706",
 
-//     image: "/projects/wallet.png",
+//     // image: "/projects/projectimg2.png",
+//      image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
 
 //     github: "#",
 //     demo: "#",
@@ -241,7 +249,8 @@
 //     color: "#ec4899",
 //     secondaryColor: "#db2777",
 
-//     image: "/projects/admin-dashboard.png",
+//     // image: "/projects/projectimg2.png",
+//      image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
 
 //     github: "#",
 //     demo: "#",
@@ -283,128 +292,301 @@
 
 
 
+
+
+// export const projects = [
+//   {
+//     id: 1,
+//     title: "Quick Commerce",
+//     category: "Full Stack",
+//     year: "2025",
+//     duration: "6 Months",
+//     role: "Full Stack Developer",
+//     status: "Completed",
+
+//     description:
+//       "A modern quick commerce platform with secure authentication, wallet management, referral rewards, online payments, order tracking, notifications, and a powerful admin dashboard.",
+
+//     color: "#22d3ee",
+//     secondaryColor: "#0ea5e9",
+
+//     // image: "/projects/projectimg1.png",
+//      image: `${import.meta.env.BASE_URL}projects/projectimg1.png`,
+
+//     github: "#",
+//     demo: "#",
+
+//     planet: {
+//       size: 0.95,
+//       speed: 0.22,
+//       ring: true,
+//       ringColor: "#22d3ee",
+//       glow: 3,
+//     },
+
+//     stats: {
+//       modules: 15,
+//       apis: 80,
+//       users: "10K+",
+//       database: "MySQL",
+//     },
+
+//     tech: [
+//       "React",
+//       "Spring Boot",
+//       "MySQL",
+//       "JWT",
+//       "Razorpay",
+//       "Tailwind CSS",
+//       "REST API",
+//       "Redux",
+//     ],
+
+//     features: [
+//       "Customer Portal",
+//       "Admin Dashboard",
+//       "Wallet System",
+//       "Referral Program",
+//       "Online Payments",
+//       "Order Tracking",
+//       "Real-time Notifications",
+//       "Role Based Authentication",
+//       "Inventory Management",
+//     ],
+//   },
+
+//   {
+//     id: 2,
+//     title: "Referral System",
+//     category: "Backend",
+//     year: "2025",
+//     duration: "2 Months",
+//     role: "Backend Developer",
+//     status: "Completed",
+
+//     description:
+//       "A referral platform that allows users to invite friends, earn rewards, track referral history, and manage wallet transactions securely.",
+
+//     color: "#8b5cf6",
+//     secondaryColor: "#7c3aed",
+
+//     // image: "/projects/projectimg2.png",
+
+//      image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
+
+//     github: "#",
+//     demo: "#",
+
+//     planet: {
+//       size: 0.75,
+//       speed: 0.34,
+//       ring: false,
+//       ringColor: "#8b5cf6",
+//       glow: 2.5,
+//     },
+
+//     stats: {
+//       modules: 8,
+//       apis: 40,
+//       users: "5K+",
+//       database: "MySQL",
+//     },
+
+//     tech: [
+//       "Java",
+//       "Spring Boot",
+//       "JPA",
+//       "Hibernate",
+//       "REST API",
+//       "MySQL",
+//       "JWT",
+//     ],
+
+//     features: [
+//       "Referral Code Generation",
+//       "Reward Distribution",
+//       "Wallet Integration",
+//       "Referral Analytics",
+//       "Referral History",
+//       "Admin Management",
+//       "Transaction Logs",
+//     ],
+//   },
+
+//   {
+//     id: 3,
+//     title: "3D Portfolio",
+//     category: "Frontend",
+//     year: "2026",
+//     duration: "Ongoing",
+//     role: "Frontend Developer",
+//     status: "In Progress",
+
+//     description:
+//       "A premium interactive developer portfolio built using React Three Fiber with cinematic animations, 3D timelines, Skills Galaxy, Project Universe, and immersive user interactions.",
+
+//     color: "#10b981",
+//     secondaryColor: "#059669",
+
+//     // image: "/projects/projectimg2.png",
+//      image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
+
+//     github: "#",
+//     demo: "#",
+
+//     planet: {
+//       size: 0.85,
+//       speed: 0.18,
+//       ring: true,
+//       ringColor: "#10b981",
+//       glow: 3.5,
+//     },
+
+//     stats: {
+//       modules: 12,
+//       apis: 20,
+//       users: "Public",
+//       database: "N/A",
+//     },
+
+//     tech: [
+//       "React",
+//       "React Three Fiber",
+//       "Three.js",
+//       "Framer Motion",
+//       "Tailwind CSS",
+//       "Vite",
+//       "GSAP",
+//     ],
+
+//     features: [
+//       "3D Hero",
+//       "Journey Timeline",
+//       "Career Timeline",
+//       "Skills Galaxy",
+//       "Project Universe",
+//       "Interactive Camera",
+//       "Responsive Design",
+//       "Smooth Animations",
+//       "Dark Theme",
+//     ],
+//   },
+
+//   {
+//     id: 4,
+//     title: "Wallet System",
+//     category: "Backend",
+//     year: "2025",
+//     duration: "3 Months",
+//     role: "Full Stack Developer",
+
+//     status: "Completed",
+
+//     description:
+//       "A secure wallet system supporting cashback, referral rewards, refunds, and transaction history.",
+
+//     color: "#f59e0b",
+//     secondaryColor: "#d97706",
+
+//     // image: "/projects/projectimg2.png",
+//      image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
+
+//     github: "#",
+//     demo: "#",
+
+//     planet: {
+//       size: 0.7,
+//       speed: 0.28,
+//       ring: true,
+//       ringColor: "#f59e0b",
+//       glow: 2.8,
+//     },
+
+//     stats: {
+//       modules: 10,
+//       apis: 35,
+//       users: "8K+",
+//       database: "MySQL",
+//     },
+
+//     tech: [
+//       "Java",
+//       "Spring Boot",
+//       "MySQL",
+//       "JPA",
+//       "JWT",
+//     ],
+
+//     features: [
+//       "Cashback Wallet",
+//       "Referral Wallet",
+//       "Refund Wallet",
+//       "Transaction History",
+//       "Wallet Reports",
+//     ],
+//   },
+
+//   {
+//     id: 5,
+//     title: "Admin Dashboard",
+//     category: "Frontend",
+//     year: "2025",
+//     duration: "4 Months",
+//     role: "Frontend Developer",
+
+//     status: "Completed",
+
+//     description:
+//       "A responsive admin dashboard with analytics, reports, charts, customer management, and order monitoring.",
+
+//     color: "#ec4899",
+//     secondaryColor: "#db2777",
+
+//     // image: "/projects/projectimg2.png",
+//      image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
+
+//     github: "#",
+//     demo: "#",
+
+//     planet: {
+//       size: 0.8,
+//       speed: 0.26,
+//       ring: false,
+//       ringColor: "#ec4899",
+//       glow: 3,
+//     },
+
+//     stats: {
+//       modules: 18,
+//       apis: 55,
+//       users: "Admin",
+//       database: "MySQL",
+//     },
+
+//     tech: [
+//       "React",
+//       "Tailwind CSS",
+//       "Chart.js",
+//       "Axios",
+//       "Redux",
+//     ],
+
+//     features: [
+//       "Analytics Dashboard",
+//       "Sales Reports",
+//       "Customer Management",
+//       "Order Management",
+//       "Charts & Graphs",
+//       "Responsive UI",
+//     ],
+//   },
+// ];
+
+
 export const projects = [
   {
     id: 1,
-    title: "Quick Commerce",
-    category: "Full Stack",
-    year: "2025",
-    duration: "6 Months",
-    role: "Full Stack Developer",
-    status: "Completed",
-
-    description:
-      "A modern quick commerce platform with secure authentication, wallet management, referral rewards, online payments, order tracking, notifications, and a powerful admin dashboard.",
-
-    color: "#22d3ee",
-    secondaryColor: "#0ea5e9",
-
-    // image: "/projects/projectimg1.png",
-     image: `${import.meta.env.BASE_URL}projects/projectimg1.png`,
-
-    github: "#",
-    demo: "#",
-
-    planet: {
-      size: 0.95,
-      speed: 0.22,
-      ring: true,
-      ringColor: "#22d3ee",
-      glow: 3,
-    },
-
-    stats: {
-      modules: 15,
-      apis: 80,
-      users: "10K+",
-      database: "MySQL",
-    },
-
-    tech: [
-      "React",
-      "Spring Boot",
-      "MySQL",
-      "JWT",
-      "Razorpay",
-      "Tailwind CSS",
-      "REST API",
-      "Redux",
-    ],
-
-    features: [
-      "Customer Portal",
-      "Admin Dashboard",
-      "Wallet System",
-      "Referral Program",
-      "Online Payments",
-      "Order Tracking",
-      "Real-time Notifications",
-      "Role Based Authentication",
-      "Inventory Management",
-    ],
-  },
-
-  {
-    id: 2,
-    title: "Referral System",
-    category: "Backend",
-    year: "2025",
-    duration: "2 Months",
-    role: "Backend Developer",
-    status: "Completed",
-
-    description:
-      "A referral platform that allows users to invite friends, earn rewards, track referral history, and manage wallet transactions securely.",
-
-    color: "#8b5cf6",
-    secondaryColor: "#7c3aed",
-
-    // image: "/projects/projectimg2.png",
-
-     image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
-
-    github: "#",
-    demo: "#",
-
-    planet: {
-      size: 0.75,
-      speed: 0.34,
-      ring: false,
-      ringColor: "#8b5cf6",
-      glow: 2.5,
-    },
-
-    stats: {
-      modules: 8,
-      apis: 40,
-      users: "5K+",
-      database: "MySQL",
-    },
-
-    tech: [
-      "Java",
-      "Spring Boot",
-      "JPA",
-      "Hibernate",
-      "REST API",
-      "MySQL",
-      "JWT",
-    ],
-
-    features: [
-      "Referral Code Generation",
-      "Reward Distribution",
-      "Wallet Integration",
-      "Referral Analytics",
-      "Referral History",
-      "Admin Management",
-      "Transaction Logs",
-    ],
-  },
-
-  {
-    id: 3,
-    title: "3D Portfolio",
+    title: "3D Developer Portfolio",
     category: "Frontend",
     year: "2026",
     duration: "Ongoing",
@@ -412,13 +594,12 @@ export const projects = [
     status: "In Progress",
 
     description:
-      "A premium interactive developer portfolio built using React Three Fiber with cinematic animations, 3D timelines, Skills Galaxy, Project Universe, and immersive user interactions.",
+      "An interactive developer portfolio featuring a 3D visual experience, career journey, skills showcase, project presentation, smooth animations, and responsive UI.",
 
     color: "#10b981",
     secondaryColor: "#059669",
 
-    // image: "/projects/projectimg2.png",
-     image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
+    image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
 
     github: "#",
     demo: "#",
@@ -432,8 +613,8 @@ export const projects = [
     },
 
     stats: {
-      modules: 12,
-      apis: 20,
+      modules: 8,
+      apis: "N/A",
       users: "Public",
       database: "N/A",
     },
@@ -445,128 +626,136 @@ export const projects = [
       "Framer Motion",
       "Tailwind CSS",
       "Vite",
-      "GSAP",
     ],
 
     features: [
       "3D Hero",
       "Journey Timeline",
       "Career Timeline",
-      "Skills Galaxy",
+      "Skills Showcase",
       "Project Universe",
-      "Interactive Camera",
+      "Interactive 3D Elements",
       "Responsive Design",
       "Smooth Animations",
       "Dark Theme",
     ],
   },
 
-  {
-    id: 4,
-    title: "Wallet System",
-    category: "Backend",
-    year: "2025",
-    duration: "3 Months",
-    role: "Full Stack Developer",
+   {
+  id: 2,
+  title: "QuickCart",
+  category: "Full Stack",
+  year: "2026",
+  duration: "Ongoing",
+  role: "Full Stack Developer",
+  status: "In Progress",
 
-    status: "Completed",
+  description:
+    "A quick-commerce platform currently under development, focused on building a seamless grocery shopping experience with product discovery, product variants, search, cart, checkout, order management, and admin operations.",
 
-    description:
-      "A secure wallet system supporting cashback, referral rewards, refunds, and transaction history.",
+  color: "#22d3ee",
+  secondaryColor: "#0ea5e9",
 
-    color: "#f59e0b",
-    secondaryColor: "#d97706",
+  image: `${import.meta.env.BASE_URL}projects/projectimg1.png`,
 
-    // image: "/projects/projectimg2.png",
-     image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
+  github: "#",
+  demo: "#",
 
-    github: "#",
-    demo: "#",
-
-    planet: {
-      size: 0.7,
-      speed: 0.28,
-      ring: true,
-      ringColor: "#f59e0b",
-      glow: 2.8,
-    },
-
-    stats: {
-      modules: 10,
-      apis: 35,
-      users: "8K+",
-      database: "MySQL",
-    },
-
-    tech: [
-      "Java",
-      "Spring Boot",
-      "MySQL",
-      "JPA",
-      "JWT",
-    ],
-
-    features: [
-      "Cashback Wallet",
-      "Referral Wallet",
-      "Refund Wallet",
-      "Transaction History",
-      "Wallet Reports",
-    ],
+  planet: {
+    size: 0.95,
+    speed: 0.22,
+    ring: true,
+    ringColor: "#22d3ee",
+    glow: 3,
   },
 
-  {
-    id: 5,
-    title: "Admin Dashboard",
-    category: "Frontend",
-    year: "2025",
-    duration: "4 Months",
-    role: "Frontend Developer",
-
-    status: "Completed",
-
-    description:
-      "A responsive admin dashboard with analytics, reports, charts, customer management, and order monitoring.",
-
-    color: "#ec4899",
-    secondaryColor: "#db2777",
-
-    // image: "/projects/projectimg2.png",
-     image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
-
-    github: "#",
-    demo: "#",
-
-    planet: {
-      size: 0.8,
-      speed: 0.26,
-      ring: false,
-      ringColor: "#ec4899",
-      glow: 3,
-    },
-
-    stats: {
-      modules: 18,
-      apis: 55,
-      users: "Admin",
-      database: "MySQL",
-    },
-
-    tech: [
-      "React",
-      "Tailwind CSS",
-      "Chart.js",
-      "Axios",
-      "Redux",
-    ],
-
-    features: [
-      "Analytics Dashboard",
-      "Sales Reports",
-      "Customer Management",
-      "Order Management",
-      "Charts & Graphs",
-      "Responsive UI",
-    ],
+  stats: {
+    modules: "In Development",
+    apis: "In Development",
+    users: "N/A",
+    database: "MongoDB",
   },
+
+  tech: [
+    "Next.js",
+    "Node.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "REST API",
+    "JavaScript",
+  ],
+
+  features: [
+    "Product Discovery",
+    "Product Variants",
+    "Search",
+    "Shopping Cart",
+    "Checkout",
+    "Order Management",
+    "Admin Product Management",
+    "Customer Management",
+  ],
+},
+
+
+
+  {
+  id: 3,
+  title: "QuickCart Backend & Admin API",
+  category: "Backend",
+  year: "2026",
+  duration: "Ongoing",
+  role: "Backend Developer",
+  status: "In Progress",
+
+  description:
+    "A Node.js backend system for QuickCart focused on product, category, inventory, customer, cart, order, and admin operations through secure REST APIs.",
+
+  color: "#FF4D6D",
+  secondaryColor: "#C084FC",
+  
+ image: `${import.meta.env.BASE_URL}projects/projectimg1.png`,
+
+
+  github: "#",
+  demo: "#",
+
+  planet: {
+    size: 0.78,
+    speed: 0.30,
+    ring: true,
+    ringColor: "#FF4D6D",
+    glow: 3,
+  },
+
+  stats: {
+    modules: "In Development",
+    apis: "In Development",
+    users: "Admin + Customer",
+    database: "MongoDB",
+  },
+
+  tech: [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "REST API",
+    "JWT",
+    "JavaScript",
+  ],
+
+  features: [
+    "Admin Authentication",
+    "Product Management",
+    "Category Management",
+    "Inventory Management",
+    "Customer Management",
+    "Order Management",
+    "Cart APIs",
+    "Role-Based Access",
+    "REST API Architecture",
+  ],
+},
+
+ 
 ];

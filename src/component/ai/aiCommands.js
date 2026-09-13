@@ -73,17 +73,33 @@ export const commands = [
     action: () => scrollToSection("contact"),
   },
 
+  // {
+  //   keywords: [
+  //     "resume",
+  //     "cv",
+  //     "download resume",
+  //     "download cv",
+  //   ],
+  //   action: () => {
+  //     window.open("/assets/saumya_gupta-resume_2026.pdf", "_blank");
+  //   },
+  // },
+
   {
-    keywords: [
-      "resume",
-      "cv",
-      "download resume",
-      "download cv",
-    ],
-    action: () => {
-      window.open("/resume.pdf", "_blank");
-    },
+  keywords: [
+    "resume",
+    "cv",
+    "download resume",
+    "download cv",
+  ],
+
+  action: () => {
+    window.open(
+      `${import.meta.env.BASE_URL}assets/saumya_gupta-resume_2026.pdf`,
+      "_blank"
+    );
   },
+},
 
   {
     keywords: [
@@ -94,7 +110,7 @@ export const commands = [
     ],
     action: () => {
       window.open(
-        "https://github.com/vikasgupta0423",
+        "https://github.com/Saumya19gupta",
         "_blank"
       );
     },
@@ -107,7 +123,7 @@ export const commands = [
     ],
     action: () => {
       window.open(
-        "https://linkedin.com/in/vikas-gupta",
+        "https://www.linkedin.com/in/saumyaguptaa1903/",
         "_blank"
       );
     },

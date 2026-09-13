@@ -1,199 +1,3 @@
-// import { motion } from "framer-motion";
-
-// const JourneyCard = ({ item, index }) => {
-//   return (
-//     <motion.div
-//       initial={{
-//         opacity: 0,
-//         x: index % 2 === 0 ? -100 : 100,
-//         y: 40,
-//       }}
-//       whileInView={{
-//         opacity: 1,
-//         x: 0,
-//         y: 0,
-//       }}
-//       viewport={{ once: true, amount: 0.4 }}
-//       transition={{
-//         duration: 0.8,
-//         ease: "easeOut",
-//       }}
-//       whileHover={{
-//         y: -10,
-//         scale: 1.03,
-//       }}
-//       className="
-//         group
-//         relative
-//         overflow-hidden
-//         rounded-3xl
-//         border
-//         border-cyan-400/20
-//         bg-white/5
-//         backdrop-blur-xl
-//         p-8
-//         transition-all
-//         duration-500
-//       "
-//     >
-//       {/* Background Glow */}
-//       <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-cyan-500/10 blur-3xl group-hover:bg-cyan-500/20 transition-all duration-500" />
-
-//       {/* Year Badge */}
-//       <motion.div
-//         initial={{ scale: 0 }}
-//         whileInView={{ scale: 1 }}
-//         transition={{
-//           type: "spring",
-//           stiffness: 180,
-//         }}
-//         className="
-//           inline-flex
-//           items-center
-//           px-4
-//           py-2
-//           rounded-full
-//           bg-cyan-500/10
-//           border
-//           border-cyan-400/20
-//           text-cyan-400
-//           text-sm
-//           font-semibold
-//           mb-6
-//         "
-//       >
-//         {item.year}
-//       </motion.div>
-
-//       {/* Icon */}
-//       <div
-//         className="
-//           w-20
-//           h-20
-//           rounded-2xl
-//           flex
-//           items-center
-//           justify-center
-//           text-5xl
-//           bg-cyan-500/10
-//           border
-//           border-cyan-400/20
-//           shadow-[0_0_25px_rgba(34,211,238,0.25)]
-//           mb-6
-//         "
-//       >
-//         {item.icon}
-//       </div>
-
-//       {/* Title */}
-//       <h2 className="text-3xl font-bold text-white">
-//         {item.title}
-//       </h2>
-
-//       {/* Subtitle */}
-//       <h4 className="mt-2 text-cyan-400 font-medium">
-//         {item.subtitle}
-//       </h4>
-
-//       {/* Description */}
-//       <p className="mt-5 text-gray-400 leading-8">
-//         {item.description}
-//       </p>
-
-//       {/* Bottom Animation Line */}
-//       <div className="mt-8 h-[2px] w-0 bg-gradient-to-r from-cyan-400 to-sky-500 transition-all duration-500 group-hover:w-full" />
-//     </motion.div>
-//   );
-// };
-
-// export default JourneyCard;
-
-
-
-
-
-
-// import { motion } from "framer-motion";
-
-// const JourneyCard = ({ item, index }) => {
-//   const isLeft = index % 2 === 0;
-
-//   return (
-//     <motion.div
-//       initial={{
-//         opacity: 0,
-//         x: typeof window !== "undefined" && window.innerWidth < 768 ? 20 : isLeft ? -30 : 30,
-//         y: 20,
-//       }}
-//       whileInView={{
-//         opacity: 1,
-//         x: 0,
-//         y: 0,
-//       }}
-//       viewport={{ once: true, amount: 0.2 }}
-//       transition={{
-//         duration: 0.5,
-//         ease: [0.25, 1, 0.5, 1],
-//       }}
-//       className="
-//         group
-//         relative
-//         overflow-hidden
-//         rounded-2xl
-//         border
-//         border-cyan-500/20
-//         bg-[#0B132B]/60
-//         p-4
-//         sm:p-6
-//         backdrop-blur-xl
-//         shadow-[0_8px_30px_rgba(0,0,0,0.35)]
-//         transition-all
-//         duration-300
-//         hover:border-cyan-400/50
-//         hover:bg-[#0B132B]/90
-//         hover:-translate-y-1.5
-//         hover:shadow-[0_12px_35px_rgba(6,182,212,0.15)]
-//       "
-//     >
-//       {/* Top Ambient Glow on Hover */}
-//       <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-cyan-500/10 blur-2xl group-hover:bg-cyan-500/20 transition-all duration-300" />
-
-//       {/* Header Row: Year Badge + Tech Icon */}
-//       <div className="flex items-center justify-between gap-3 mb-3 sm:mb-4">
-//         <span className="inline-flex items-center px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-400/30 text-cyan-300 text-[11px] sm:text-xs font-semibold tracking-wide">
-//           {item.year}
-//         </span>
-
-//         {item.icon && (
-//           <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-xl bg-cyan-500/10 border border-cyan-400/20 text-cyan-400 text-lg sm:text-xl shadow-[0_0_15px_rgba(34,211,238,0.2)]">
-//             {item.icon}
-//           </div>
-//         )}
-//       </div>
-
-//       {/* Title & Subtitle */}
-//       <h3 className="text-base sm:text-lg font-bold text-white tracking-tight leading-snug group-hover:text-cyan-300 transition-colors">
-//         {item.title}
-//       </h3>
-
-//       {item.subtitle && (
-//         <h4 className="mt-0.5 text-xs sm:text-sm font-medium text-cyan-400/90">
-//           {item.subtitle}
-//         </h4>
-//       )}
-
-//       {/* Description */}
-//       <p className="mt-2 text-xs sm:text-sm leading-relaxed text-slate-400 font-normal">
-//         {item.description}
-//       </p>
-
-//       {/* Bottom Subtle Gradient Accent Line */}
-//       <div className="mt-4 h-0.5 w-0 bg-gradient-to-r from-cyan-400 to-indigo-500 transition-all duration-500 group-hover:w-full" />
-//     </motion.div>
-//   );
-// };
-
-// export default JourneyCard;
 
 
 
@@ -207,44 +11,46 @@
 //       onClick={onClick}
 //       initial={{
 //         opacity: 0,
-//         x: typeof window !== "undefined" && window.innerWidth < 768 ? 20 : isLeft ? -30 : 30,
-//         y: 20,
+//         x: typeof window !== "undefined" && window.innerWidth < 768 ? 20 : isLeft ? -25 : 25,
+//         y: 15,
 //       }}
 //       whileInView={{ opacity: 1, x: 0, y: 0 }}
 //       viewport={{ once: true, amount: 0.2 }}
-//       transition={{ duration: 0.5, ease: [0.25, 1, 0.5, 1] }}
+//       transition={{ duration: 0.5, ease: "easeOut" }}
 //       className={`
 //         group
 //         relative
 //         overflow-hidden
 //         rounded-2xl
+//         border
 //         p-5
 //         sm:p-6
 //         backdrop-blur-xl
 //         cursor-pointer
 //         select-none
+//         transform-gpu
 //         transition-all
 //         duration-300
 //         ${
 //           isActive
-//             ? "border-2 border-cyan-400 bg-[#0B132B] shadow-[0_10px_35px_rgba(6,182,212,0.25)] -translate-y-1.5"
-//             : "border border-slate-800/90 bg-[#0B132B]/50 hover:border-cyan-500/40 hover:bg-[#0B132B]/80 hover:-translate-y-1"
+//             ? "border-cyan-400 bg-[#0B132B] shadow-[0_10px_35px_rgba(6,182,212,0.25)] -translate-y-1"
+//             : "border-slate-800/90 bg-[#0B132B]/50 hover:border-cyan-500/40 hover:bg-[#0B132B]/75 hover:-translate-y-1"
 //         }
 //       `}
 //     >
-//       {/* Dynamic Background Ambient Light */}
+//       {/* Background Ambient Light */}
 //       <div
-//         className={`pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full blur-3xl transition-opacity duration-500 ${
-//           isActive ? "bg-cyan-500/25 opacity-100" : "bg-cyan-500/10 opacity-0 group-hover:opacity-100"
+//         className={`pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full blur-2xl transition-opacity duration-300 ${
+//           isActive ? "bg-cyan-500/20 opacity-100" : "bg-cyan-500/10 opacity-0 group-hover:opacity-100"
 //         }`}
 //       />
 
-//       {/* Top Meta Bar */}
-//       <div className="flex items-center justify-between gap-3 mb-3.5">
+//       {/* Meta Header */}
+//       <div className="flex items-center justify-between gap-3 mb-3">
 //         <span
 //           className={`inline-flex items-center px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide transition-colors ${
 //             isActive
-//               ? "bg-cyan-400 text-slate-950 shadow-[0_0_12px_rgba(34,211,238,0.5)]"
+//               ? "bg-cyan-400 text-slate-950 font-bold"
 //               : "bg-cyan-500/10 border border-cyan-400/30 text-cyan-300"
 //           }`}
 //         >
@@ -253,9 +59,9 @@
 
 //         {item.icon && (
 //           <div
-//             className={`flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-xl text-lg sm:text-xl transition-all duration-300 ${
+//             className={`flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-xl text-lg sm:text-xl transition-colors duration-300 ${
 //               isActive
-//                 ? "bg-cyan-400 text-slate-950 scale-105 shadow-[0_0_15px_rgba(34,211,238,0.4)]"
+//                 ? "bg-cyan-400 text-slate-950"
 //                 : "bg-cyan-500/10 border border-cyan-400/20 text-cyan-400 group-hover:border-cyan-400/40"
 //             }`}
 //           >
@@ -264,7 +70,7 @@
 //         )}
 //       </div>
 
-//       {/* Title & Subtitle */}
+//       {/* Content */}
 //       <h3
 //         className={`text-base sm:text-lg font-bold tracking-tight transition-colors ${
 //           isActive ? "text-cyan-300" : "text-white group-hover:text-cyan-200"
@@ -279,17 +85,16 @@
 //         </h4>
 //       )}
 
-//       {/* Description */}
 //       <p className="mt-2 text-xs sm:text-sm leading-relaxed text-slate-400 font-normal">
 //         {item.description}
 //       </p>
 
-//       {/* Bottom Progress Indicator Bar */}
+//       {/* Bottom Progress Underline */}
 //       <div
-//         className={`mt-4 h-0.5 rounded-full transition-all duration-500 ${
+//         className={`mt-4 h-[2px] rounded-full transition-all duration-300 ${
 //           isActive
 //             ? "w-full bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-500"
-//             : "w-0 bg-cyan-400/40 group-hover:w-1/2"
+//             : "w-0 bg-cyan-400/30 group-hover:w-1/3"
 //         }`}
 //       />
 //     </motion.div>
@@ -299,6 +104,111 @@
 // export default JourneyCard;
 
 
+
+
+
+
+// import { motion } from "framer-motion";
+
+// const JourneyCard = ({ item, index, isActive, onClick }) => {
+//   const isLeft = index % 2 === 0;
+
+//   return (
+//     <motion.div
+//       onClick={onClick}
+//       initial={{
+//         opacity: 0,
+//         x: typeof window !== "undefined" && window.innerWidth < 768 ? 20 : isLeft ? -25 : 25,
+//         y: 15,
+//       }}
+//       whileInView={{ opacity: 1, x: 0, y: 0 }}
+//       viewport={{ once: true, amount: 0.2 }}
+//       transition={{ duration: 0.5, ease: "easeOut" }}
+//       className={`
+//         group
+//         relative
+//         overflow-hidden
+//         rounded-2xl
+//         border
+//         p-5
+//         sm:p-6
+//         backdrop-blur-xl
+//         cursor-pointer
+//         select-none
+//         transform-gpu
+//         transition-all
+//         duration-300
+//         ${
+//           isActive
+//             ? "border-cyan-400 bg-[#0B132B] shadow-[0_10px_35px_rgba(6,182,212,0.25)] -translate-y-1"
+//             : "border-slate-800/90 bg-[#0B132B]/50 hover:border-cyan-500/40 hover:bg-[#0B132B]/75 hover:-translate-y-1"
+//         }
+//       `}
+//     >
+//       {/* Background Ambient Light */}
+//       <div
+//         className={`pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full blur-2xl transition-opacity duration-300 ${
+//           isActive ? "bg-cyan-500/20 opacity-100" : "bg-cyan-500/10 opacity-0 group-hover:opacity-100"
+//         }`}
+//       />
+
+//       {/* Meta Header */}
+//       <div className="flex items-center justify-between gap-3 mb-3">
+//         <span
+//           className={`inline-flex items-center px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide transition-colors ${
+//             isActive
+//               ? "bg-cyan-400 text-slate-950 font-bold"
+//               : "bg-cyan-500/10 border border-cyan-400/30 text-cyan-300"
+//           }`}
+//         >
+//           {item.year}
+//         </span>
+
+//         {item.icon && (
+//           <div
+//             className={`flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-xl text-lg sm:text-xl transition-colors duration-300 ${
+//               isActive
+//                 ? "bg-cyan-400 text-slate-950"
+//                 : "bg-cyan-500/10 border border-cyan-400/20 text-cyan-400 group-hover:border-cyan-400/40"
+//             }`}
+//           >
+//             {item.icon}
+//           </div>
+//         )}
+//       </div>
+
+//       {/* Content */}
+//       <h3
+//         className={`text-base sm:text-lg font-bold tracking-tight transition-colors ${
+//           isActive ? "text-cyan-300" : "text-white group-hover:text-cyan-200"
+//         }`}
+//       >
+//         {item.title}
+//       </h3>
+
+//       {item.subtitle && (
+//         <h4 className="mt-0.5 text-xs sm:text-sm font-medium text-slate-400">
+//           {item.subtitle}
+//         </h4>
+//       )}
+
+//       <p className="mt-2 text-xs sm:text-sm leading-relaxed text-slate-400 font-normal">
+//         {item.description}
+//       </p>
+
+//       {/* Bottom Progress Underline */}
+//       <div
+//         className={`mt-4 h-[2px] rounded-full transition-all duration-300 ${
+//           isActive
+//             ? "w-full bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-500"
+//             : "w-0 bg-cyan-400/30 group-hover:w-1/3"
+//         }`}
+//       />
+//     </motion.div>
+//   );
+// };
+
+// export default JourneyCard;
 
 
 import { motion } from "framer-motion";
@@ -317,31 +227,31 @@ const JourneyCard = ({ item, index, isActive, onClick }) => {
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`
-        group
-        relative
-        overflow-hidden
-        rounded-2xl
-        border
-        p-5
-        sm:p-6
-        backdrop-blur-xl
-        cursor-pointer
-        select-none
-        transform-gpu
-        transition-all
-        duration-300
-        ${
-          isActive
-            ? "border-cyan-400 bg-[#0B132B] shadow-[0_10px_35px_rgba(6,182,212,0.25)] -translate-y-1"
-            : "border-slate-800/90 bg-[#0B132B]/50 hover:border-cyan-500/40 hover:bg-[#0B132B]/75 hover:-translate-y-1"
-        }
-      `}
+    className={`
+  group
+  relative
+  overflow-hidden
+  rounded-2xl
+  border
+  p-5
+  sm:p-6
+  backdrop-blur-xl
+  cursor-pointer
+  select-none
+  transform-gpu
+  transition-all
+  duration-300
+  ${
+    isActive
+      ? "border-rose-400 bg-zinc-900/90 shadow-[0_10px_35px_rgba(244,63,94,0.25)] -translate-y-1"
+      : "border-zinc-800/80 bg-zinc-950/70 hover:border-rose-500/40 hover:bg-zinc-900/60 hover:-translate-y-1"
+  }
+`}
     >
       {/* Background Ambient Light */}
       <div
         className={`pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full blur-2xl transition-opacity duration-300 ${
-          isActive ? "bg-cyan-500/20 opacity-100" : "bg-cyan-500/10 opacity-0 group-hover:opacity-100"
+          isActive ? "bg-rose-500/20 opacity-100" : "bg-rose-500/10 opacity-0 group-hover:opacity-100"
         }`}
       />
 
@@ -350,8 +260,8 @@ const JourneyCard = ({ item, index, isActive, onClick }) => {
         <span
           className={`inline-flex items-center px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide transition-colors ${
             isActive
-              ? "bg-cyan-400 text-slate-950 font-bold"
-              : "bg-cyan-500/10 border border-cyan-400/30 text-cyan-300"
+              ? "bg-rose-400 text-slate-950 font-bold"
+              : "bg-rose-500/10 border border-rose-400/30 text-rose-300"
           }`}
         >
           {item.year}
@@ -361,8 +271,8 @@ const JourneyCard = ({ item, index, isActive, onClick }) => {
           <div
             className={`flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-xl text-lg sm:text-xl transition-colors duration-300 ${
               isActive
-                ? "bg-cyan-400 text-slate-950"
-                : "bg-cyan-500/10 border border-cyan-400/20 text-cyan-400 group-hover:border-cyan-400/40"
+                ? "bg-rose-400 text-slate-950"
+                : "bg-rose-500/10 border border-rose-400/20 text-rose-400 group-hover:border-rose-400/40"
             }`}
           >
             {item.icon}
@@ -373,7 +283,7 @@ const JourneyCard = ({ item, index, isActive, onClick }) => {
       {/* Content */}
       <h3
         className={`text-base sm:text-lg font-bold tracking-tight transition-colors ${
-          isActive ? "text-cyan-300" : "text-white group-hover:text-cyan-200"
+          isActive ? "text-rose-300" : "text-white group-hover:text-rose-200"
         }`}
       >
         {item.title}
@@ -393,8 +303,8 @@ const JourneyCard = ({ item, index, isActive, onClick }) => {
       <div
         className={`mt-4 h-[2px] rounded-full transition-all duration-300 ${
           isActive
-            ? "w-full bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-500"
-            : "w-0 bg-cyan-400/30 group-hover:w-1/3"
+            ? "w-full bg-gradient-to-r from-rose-400 via-pink-400 to-fuchsia-500"
+            : "w-0 bg-rose-400/30 group-hover:w-1/3"
         }`}
       />
     </motion.div>
