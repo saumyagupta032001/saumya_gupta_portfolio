@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.1",
   "type": "module",
-  "homepage": "https://github.com/Saumya19gupta.github.io/saumya_gupta-portfolio",
+  "homepage": "https://github.com/saumyagupta032001.github.io/saumya_gupta_portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
