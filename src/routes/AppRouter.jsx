@@ -130,6 +130,34 @@
 
 
 
+// import { createBrowserRouter } from "react-router-dom";
+
+// import Layout from "../layouts/layout";
+// import Home from "../Pages/Home";
+
+// const router = createBrowserRouter(
+//   [
+//     {
+//       path: "/saumya_gupta_portfolio",
+//       element: <Layout />,
+//       children: [
+//         {
+//           index: true,
+//           element: <Home />,
+//         },
+//       ],
+//     },
+//   ],
+//   {
+//     basename: "/",
+//   }
+// );
+
+// export default router;
+
+
+
+
 import { createBrowserRouter } from "react-router-dom";
 
 import Layout from "../layouts/layout";
@@ -138,7 +166,7 @@ import Home from "../Pages/Home";
 const router = createBrowserRouter(
   [
     {
-      path: "/saumya_gupta_portfolio",
+      path: "/",
       element: <Layout />,
       children: [
         {
@@ -149,7 +177,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/",
+    basename: "/saumya_gupta_portfolio",
   }
 );
 
