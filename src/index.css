@@ -176,9 +176,9 @@ body {
   width: 6px;
 }
 
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: #070B1F;
-}
+} */
 
 /* ::-webkit-scrollbar-thumb {
   background: #00E5FF;
@@ -188,6 +188,11 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #38bdf8;
 } */
+
+
+::-webkit-scrollbar-track {
+  background: #080001;
+}
 
 
 ::-webkit-scrollbar-thumb {

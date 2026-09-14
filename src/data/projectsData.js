@@ -599,7 +599,7 @@ export const projects = [
     color: "#10b981",
     secondaryColor: "#059669",
 
-    image: `${import.meta.env.BASE_URL}projects/projectimg2.png`,
+    image: `${import.meta.env.BASE_URL}projects/projectimage1.png`,
 
     github: "#",
     demo: "#",
@@ -656,7 +656,7 @@ export const projects = [
   color: "#22d3ee",
   secondaryColor: "#0ea5e9",
 
-  image: `${import.meta.env.BASE_URL}projects/projectimg1.png`,
+  image: `${import.meta.env.BASE_URL}projects/projectimage2.png`,
 
   github: "#",
   demo: "#",
@@ -714,7 +714,7 @@ export const projects = [
   color: "#FF4D6D",
   secondaryColor: "#C084FC",
   
- image: `${import.meta.env.BASE_URL}projects/projectimg1.png`,
+ image: `${import.meta.env.BASE_URL}projects/projectimage3.png`,
 
 
   github: "#",
