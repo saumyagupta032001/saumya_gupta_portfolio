@@ -551,7 +551,7 @@ const MobileMenu = ({ activeSection }) => {
 
               {/* Resume CTA */}
               <a
-                href="/resume/FSD_v2.1_Vikas_Gupta.pdf"
+                href={`${import.meta.env.BASE_URL}assets/saumya_gupta-resume_2026.pdf`}
                 download
                 onClick={closeMenu}
                 className="
