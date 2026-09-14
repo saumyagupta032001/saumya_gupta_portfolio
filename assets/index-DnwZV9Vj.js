@@ -117,7 +117,7 @@ Error generating stack: `+e.message+`
                           transition-all
                           duration-200
                           ${i?`border border-rose-400/30 bg-rose-500/15 text-rose-300`:`border border-transparent bg-white/[0.03] text-slate-300 hover:border-rose-400/20 hover:bg-rose-500/10 hover:text-rose-300`}
-                        `,children:[(0,W.jsxs)(`div`,{className:`flex items-center gap-3`,children:[(0,W.jsx)(t.icon,{size:16,className:`transition-transform duration-300 group-hover:rotate-180 ${i?`text-rose-400`:`text-slate-400 group-hover:text-rose-400`}`}),(0,W.jsx)(`span`,{children:t.title})]}),(0,W.jsx)(`span`,{className:`h-1.5 w-1.5 rounded-full bg-rose-400 transition-opacity ${i?`opacity-100`:`opacity-0 group-hover:opacity-100`}`})]})},t.id)})}),(0,W.jsxs)(`a`,{href:`/resume/FSD_v2.1_Vikas_Gupta.pdf`,download:!0,onClick:r,className:`
+                        `,children:[(0,W.jsxs)(`div`,{className:`flex items-center gap-3`,children:[(0,W.jsx)(t.icon,{size:16,className:`transition-transform duration-300 group-hover:rotate-180 ${i?`text-rose-400`:`text-slate-400 group-hover:text-rose-400`}`}),(0,W.jsx)(`span`,{children:t.title})]}),(0,W.jsx)(`span`,{className:`h-1.5 w-1.5 rounded-full bg-rose-400 transition-opacity ${i?`opacity-100`:`opacity-0 group-hover:opacity-100`}`})]})},t.id)})}),(0,W.jsxs)(`a`,{href:`/saumya_gupta_portfolio/assets/saumya_gupta-resume_2026.pdf`,download:!0,onClick:r,className:`
                   mt-4
                   flex
                   w-full
